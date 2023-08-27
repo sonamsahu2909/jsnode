@@ -1,0 +1,14 @@
+<script>
+function call()
+{
+   var x=[15,72,36,45]
+       
+       z=x.every((item)=>item<50)
+      alert(z)
+}
+</script>
+
+<html>
+<input type="button" value="Click Here" onclick="call()">
+<br><br><br>
+</html>

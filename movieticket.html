@@ -1,0 +1,105 @@
+<script>
+function call()
+{
+  var mn = moviename.options[moviename.selectedIndex].text
+  var price = moviename.value
+  var mn = #Ticketsnum.options[#ticketsname.selectedIndex].text
+  Total_ticket = #Ticketsnum.value
+  var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December',]
+
+    var amt=price*Total_ticket
+
+    if()
+    {dis=5}
+    else if(ticket>=10)
+    {disc=10}
+    else
+    {disc=0}
+    disamt=amt*disc/100
+    na=amt-disamt
+    var h=`<table border='1' width='50%' cellspacing='0' cellpadding='5'>`
+    h+="<caption><b>Bill/Invoice<b><caption>"
+    h+=`<tr><th><img src='${"ticketimage/"+mn+".jpg"}' width='200'></th></tr>`
+    h+="<tr><th><h2>"+mn+"</h2></th></tr>"
+    h+="<tr><th><h4>price: "+price+" </h4></th></tr>"
+    h+="<tr><th><h4>ticket: "total_ticket"</h4></th></tr>"
+    h+="<tr><th><h4>Week:"+days+"</h4></th></tr>"
+    h+="<tr><th><h4>Month:"+months+"</h4></th></tr>"
+    h+="<tr><th><h4>Amount:"+amt+"</h4></th></tr>"
+    h+="<tr><th><h4>Discount["+disc+"%]: "+disamt+"</h4></th></tr>"
+    h+="<tr><th><h4><font color='green'>Net Amount:"+na+"</font></h4></th></tr></table>"
+    result.innerHTML=h
+   }
+
+
+
+</script>
+
+<html>
+<center>
+<table border="1" callspacing="6" cellpadding="15">
+<caption><b>Booking Details</b></caption>
+<tr>
+  <td><b>Movie:</b></td>
+<td>
+     <select id="-movie-">
+          <option value="100">Liger</option>
+          <option value="100">Raksha Bandhan</option>
+          <option value="100">Ek Villian Return</option>
+           <option value="200">Laal Singh Chaddaa </option>
+     </select>
+</td>
+</tr>
+
+<tr>
+<td><b>Theaters:</b></td>
+<td>
+   <select id="-Screens-">
+         <option>screen1</option>
+         <option >screen2</option>
+         <option >screen3</option>
+   </select>
+</td>
+</tr>
+
+<tr>
+   <td><b>Date</b></td>
+   <td>
+   <input type="date" name="bd" id="bd">
+   </td>
+</tr>
+
+<tr>
+   <td><b>Time:</b></td>
+   <td>
+   <input type="time" name="bt" id="bt">
+   </td>
+</tr>
+
+<tr>
+<td><b>Email</b></td>
+<td><input type="email" name="email" id="email"></td>
+</tr>
+
+<tr>
+   <td><b>#Tickets</b></td>
+   <td><input required type="Text" name="ticket" id="ticket"></td>
+</tr>
+
+<br>
+  </table>
+<br>
+
+<tr>
+   <td><b>Total price:</b></td>
+   <td><input required type="Text" name="cid" id="cid"></td>
+</tr>
+
+
+<br><br>
+<input type="button" value="Book tickets" onclick="call()"><br><br>
+<div id="result">
+</div>
+</center>
+</html>

@@ -1,0 +1,19 @@
+<script>
+function call ()
+{
+  var x=parseInt(a.value)+parseInt(b.value)
+  /*result.innerHTML="<font face='impact' size='5' color='green'>Sum is:"+x+"
+  </font>"*/
+  result.innerHTML=a.value+"+"+b.value+"="+x
+
+}
+</script>
+
+
+<html>
+
+<input type="text" id="a" placeholder="First Number"><br><br>
+<input type="text" id="b" placeholder="Second Number"><br><br>
+<input type="button" value="Click Here" onclick="call()"><br><br>
+<div id="result">See Here......</div>
+</html>

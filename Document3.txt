@@ -1,0 +1,14 @@
+if(m.checked)
+{ st="s/o"
+}
+else
+{st="d/o"}
+
+hr=""
+if(h>0 && h<35)
+{ hr="*"}
+else if(hr>=75 && hr<=100)
+{hr="D"}
+
+
+h+="<tr><td>100</td><td>Hindi</td><td>35</td><td>100</td><td>"+h+"</td><td>"+hr+"</td></tr>"

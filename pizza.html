@@ -1,0 +1,25 @@
+<script src="pizza.js">
+  </script>
+<html>
+<b>List of pizzas:<b><br>
+<select id='pizza' onchange="show()">
+   <option>-Pizza-</option>
+   <option>tamato pizza</option>
+   <option>margetta pizza</option>
+   <option>cheese pizza</option>
+   <option>onion pizza</option>
+</select><br><br>
+
+<b>Selected pizza:</b><span id="pn"> </span><br><br>
+<img width="200" id="pimg">
+
+<h1>
+<b>price:</b><font size='5' id='fn'><span id="pprice"></span>/-only</font><br><br>
+</h1>
+
+<input type="text" id="qty" placeholder="Enter Qty"><br><br>
+<input type="button" value="Get Amount" onclick="getprice()"><br><br>
+Amount:<span id="amt">....</span>/-<br><br>
+
+
+</html>

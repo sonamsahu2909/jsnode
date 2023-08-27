@@ -1,0 +1,15 @@
+<script>
+function call()
+{
+ mobileno="8966043639"
+
+ alert(mobileno.slice(0,4).padEnd(10,"*"))
+ alert(mobileno.slice(0,4).padStart(10,"*"))
+ alert(mobileno.slice(0,2)+mobileno.slice(8,10).padStart(8,"*"))
+}
+</script>
+
+<html>
+<input type="button" value="Click Here" onclick="call()">
+<br><br><br>
+</html>

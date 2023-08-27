@@ -1,0 +1,16 @@
+<script>
+function call ()
+{
+  var x=parseInt(a.value)*parseInt(b.value)
+  result.innerHTML=`Total Amount:- ${a.value}*${b.value}=${x}`
+  }
+</script>
+
+
+<html>
+
+<input type="text" id="a" placeholder="Rate"><br><br>
+<input type="text" id="b" placeholder="Qty"><br><br>
+<input type="button" value="Amount" onclick="call()"><br><br>
+<div id="result">See Here......</div>
+</html>

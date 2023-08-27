@@ -1,0 +1,25 @@
+<script>
+var tt
+function call()
+{
+   var d=new Date()
+   result.innerHTML=`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+ }
+function start()
+{
+  tt=setInterval(call,1000)
+}
+function stop()
+{
+ clearInterval(tt)
+}
+</script>
+
+<html>
+<input type="button" value="Start" onclick="start()">
+<input type="button" value="Stop" onclick="stop()">
+<center>
+<div id="result"> </div>
+</center>
+<br><br><br>
+</html>

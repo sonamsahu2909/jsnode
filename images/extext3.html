@@ -1,0 +1,24 @@
+<script>
+function call()
+{
+ var age=parseInt(txt.value)
+ if(age>=18 && age<=30)
+ {
+     result.src="right.jpg"
+     btn.disabled=false
+}
+else
+ {
+    result.src="wrong.jpg"
+    btn.disabled=true
+  }
+}
+</script>
+
+<html>
+<input type="text" id="txt" placeholder="Enter Age"  onkeyup="call()">
+
+<img id="result" width="10"><br><br>
+<input type="Button" id="btn" disabled value="Click Here">
+
+</html>

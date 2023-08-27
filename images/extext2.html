@@ -1,0 +1,21 @@
+<script>
+function call()
+{
+ if(pwd.value==cpwd.value)
+ {
+     result.src='${"right.jpg"}'
+}
+else
+{
+    result.src='${"wrong.jpg"}'
+  }
+}
+</script>
+
+<html>
+<input type="password" id="pwd" placeholder="Enter password"><br><br>
+<input type="password" id="cpwd" placeholder="Enter confirm password" onkeyup="call()"><br><br>
+
+<img id="result" >
+
+</html>

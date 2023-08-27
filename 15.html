@@ -1,0 +1,154 @@
+<script src="thirteen.js"></script>
+<style>
+    h1 {
+	   background-color:DodgerBlue;
+	}
+	table {
+	   border-color:red;
+	   color:navy;
+	   background-color:lightcyan;
+	}
+	body {
+	   background-color:skyblue;
+	}
+</style>
+<html>
+<center>
+  <head>
+    <table>
+		<tr>
+		<center>
+		<td>
+		<img src="Image/cbse.png" width='300' height="60">
+		</td>
+		</center>
+		</tr>
+
+	</table>
+
+  <center>
+  <caption>
+     <h1>
+	 <font size="5" face="Calibri Light Italic">
+
+	 STUDENT REPORT
+	 &#128194;
+
+	 </font>
+	 </h1>
+  </caption>
+</center>
+<hr color="black"><br>
+</head>
+<body>
+<form>
+<center>
+  <table cellspacing="20" cellpadding="9" border="0">
+  <caption>
+  <font size="5" face="Calibri Light Italic">
+    <i>
+     ENTER STUDENT DETAILS
+	</i>
+  </caption>
+     <tr>
+       <td>
+	   <font size='4' face='Calibri Light Italic'>
+	      Student Name:<input pattern="[a-z A-Z+]" required type='text' name='stn' id='stn'>
+	   </font>
+	   </td>
+       <td>
+	   <font size='4' face='Calibri Light Italic'>
+	      Roll No.:<input pattern="[0-9+]" required type='text' name='rn' id='rn'>
+	   </font>
+	   </td>
+       <td>
+	   <font size='4' face='Calibri Light Italic'>
+	      School Name:<input pattern="[a-z A-Z+]" required type='text' name='sn' id='sn'>
+	   </font>
+	   </td>
+       <td>
+	   <font size='4' face='Calibri Light Italic'>
+	      Father's Name:<input pattern="[a-z A-Z+]" required type='text' name='fn' id='fn'>
+	   </font>
+	   </td>
+       <td>
+	   <font size='4' face='Calibri Light Italic'>
+	      Gender:
+           Male<input required type="radio" name="mgen" id="mgen" >
+           Female<input required type="radio" name="fgen" id="fgen" >
+	   </font>
+       </td>
+	 </tr>
+   </table><br><br>
+   <table>
+   <caption>
+   <font size='5' face='Calibri Light Italic'>
+     ENTER SUBJECT MARKS
+   </font>
+   </caption>
+	 <tr>
+	 <font size='4' face='Calibri Light Italic'>
+       <td>
+
+	     Hindi Marks:
+	   </td>
+       <td>
+	     <input required type='text' name='hm' id='hm' placeholder="Hindi Marks">
+	   </td>
+	 </font>
+     </tr>
+     <tr>
+	 <font size='4' face='Calibri Light Italic'>
+       <td>
+	      English Marks:
+	   </td>
+       <td>
+	     <input required type='text' name='em' id='em' placeholder="English Marks">
+	   </td>
+     </font>
+	 </tr>
+     <tr>
+	 <font size='4' face='Calibri Light Italic'>
+       <td>
+	     Physics Marks:
+	   </td>
+	   <td>
+	     <input required type='text' name='pm' id='pm' placeholder="Physics Marks">
+	   </td>
+	 </font>
+	 </tr>
+     <tr>
+	 <font size='4' face='Calibri Light Italic'>
+       <td>
+	     Maths Marks:
+	   </td>
+       <td>
+	     <input required type='text' name='mathm' id='mathm' placeholder="Maths Marks">
+	   </td>
+     </font>
+	 </tr>
+     <tr>
+	 <font size='4' face='Calibri Light Italic'>
+       <td>
+	     Chemistry Marks:
+	   </td>
+       <td>
+	     <input required type='text' name='cm' id='cm' placeholder="Chemistry Marks">
+	   </td>
+     </font>
+	 </tr>
+  </table><br><br>
+  <input required style='background-color:SteelBlue; color:white;' type="button" value="Submit" onclick="report()">
+  <input style='background-color:SteelBlue; color:white;' type="reset" value="Clear">
+  </form>
+
+  <div id="result"></div>
+  <div id="result2"></div>
+  <div id="result3"></div>
+
+  <br><br>
+  <hr color='black'>
+  <br><br>
+ </center>
+</body>
+</html>

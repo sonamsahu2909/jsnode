@@ -1,0 +1,58 @@
+<script>
+function call()
+{
+  var pn = productname.options[productname.selectedIndex].text
+  var price = productname.value
+  var q =  qty.value
+  var amt=price*q
+  if(amt>100000)
+  {disc=5}
+  else if(amt>20000 && amt<=99999)
+  {disc=2}
+  else
+  {disc=0}
+  disamt=amt*disc/100
+  na=amt-disamt
+  var h=`<table border='1' width='50%' cellspacing='0' cellpadding='5'>`
+  h+="<caption><b>Bill/Invoice<b><caption>"
+  h+=`<tr><th><img src='${"images/"+pn+".jpg"}' width='200'></th></tr>`
+  h+="<tr><th><h2>"+pn+"</h2></th></tr>"
+  h+="<tr><th><h4>Price: "+price+" </h4></th></tr>"
+  h+="<tr><th><h4>Quantity: "+q+"</h4></th></tr>"
+  h+="<tr><th><h4>Amount:"+amt+"</h4></th></tr>"
+  h+="<tr><th><h4>Discount["+disc+"%]: "+disamt+"</h4></th></tr>"
+  h+="<tr><th><h4><font color='green'>Net Amount:"+na+"</font></h4></th></tr></table>"
+  result.innerHTML=h
+ }
+
+
+</script>
+
+<html>
+<center>
+<table border="1" callspacing="0" cellpadding="5">
+<caption><b>List of Amul products</b></caption>
+<tr>
+<td><b>Products:</b></td>
+<td>
+<select id="productname">
+<option value="100">Amul Butter</option>
+<option value="60">Amul Milk</option>
+<option value="200">Amul Cheese</option>
+</select>
+</td>
+</tr>
+
+<tr>
+   <td>
+      <b>Quantity:</b>
+   </td>
+<td><input type="text" id="qty"></td>
+</tr>
+</table>
+<br>
+<input type="button" value="Click Here" onclick="call()"><br><br>
+<div id="result">
+</div>
+</center>
+</html>

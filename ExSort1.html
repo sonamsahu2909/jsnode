@@ -1,0 +1,16 @@
+<script>
+function call()
+{
+  var x=[["Red Bull",100],["Pepsi",400],["Fanta",200],["Frooti",100]]
+
+  var k=x.sort((a,b)=>{
+     return a[1]>b[1]?-1:1
+})
+alert(k)
+}
+</script>
+
+<html>
+<input type="button" value="Click Here" onclick="call()">
+<br><br><br>
+</html>
